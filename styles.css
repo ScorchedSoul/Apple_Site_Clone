@@ -1,13 +1,24 @@
 /*   CSS STYLING   */
 
-body
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+*
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    all: none;
+}
 
+body
+{
     background-color: white;
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+
+    width: 100%;
+    height: 100%;
 }
 
 .navbar-container
@@ -46,9 +57,17 @@ body
     font-size: 0.8rem;
 }
 
-.nav-apple-image , .nav-search-image , .nav-bag-image
+.fa-apple , .fa-bag-shopping , .fa-magnifying-glass
 {
-    width: 20px;
+    font-size: 1rem;
+    color: white;
+}
+
+.fa-angles-right
+{
+    color: rgb(50, 117, 233);
+    padding: 3px;
+    padding-right: 5px;
 }
 
 .sub-nav
@@ -117,10 +136,6 @@ body
     text-decoration: underline;
 }
 
-.arrowhead
-{
-    width: 20px;
-}
 
 .image-pannel1
 {
@@ -456,4 +471,207 @@ body
     font-size: 0.9rem;
     color: black;
     font-weight: 300;
+}
+
+
+
+
+/*   MEDIA QUERIES STYLING   */
+
+@media only screen and (max-width: 400px) and (min-width: 100px)
+
+{
+
+    body
+    {
+        width: 100%;
+        height: 100%;
+
+        margin: 0px;
+        overflow-x: hidden ;
+        overflow-y: scroll;
+        box-sizing: border-box;
+    }
+
+    .pannel
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        letter-spacing: 1px;
+
+        font-size: 1.5rem;
+    }
+
+    .ipad_image
+    {
+        width: 20rem;
+    }
+
+
+    .navbar-container
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-text
+    {
+       display: none;
+    }
+
+    .sub-nav
+    {
+        text-align: center;
+
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .sub-nav-text
+    {
+        text-align: center;
+        font-weight: 300;
+        font-size: 0.85rem;
+
+    }
+
+    .iPhone_13
+    {
+        font-size: 2.7rem;
+        font-weight: 400;
+    }
+
+    .learn_more
+    {
+        font-size: 1.2rem;
+        padding-right: 5px;
+    }
+
+    .flex-learnMore
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-angles-right
+    {
+        font-size: 1.2rem;
+    }
+
+    .pannel > span
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image-pannel1
+    {
+        width: 75%;
+    }
+
+    .pannel2
+    {
+        padding-top: 30px;
+    }
+
+    .new-sub-2
+    {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .image-pannel2
+    {
+        width: 75%;
+    }
+
+    .pannel3
+    {
+        flex-direction: column;
+    }
+
+    .ipad_text_image
+    {
+        padding-top: 30px;
+        width: 70%;
+        height: 35%;
+    }
+
+    .light
+    {
+        padding-top: 0px;
+    }
+
+    .ipad_image
+    {
+        padding-top: 20px;
+    }
+
+    .fa-bag-shopping , .fa-magnifying-glass
+    {
+        display: none;
+    }
+
+    .bottom
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+        
+        margin: 0px;
+        padding: 0px;
+    }
+
+   .fitem5 , .fitem6
+   {
+    display: none;
+   }
+
+   .copyright-container
+   {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+   }
+
+   .text-bottom > h5
+   {
+    font-size: 0.8rem;
+   }
+
+   .bottom-span
+   {
+    border: 0px;
+   }
+
+   .item-r
+   {
+    display: none;
+   }
+
+   .pannel
+   {
+    margin: 0px;
+    padding: 0px;
+   }
+
+   .image-6-2
+   {
+    width: 100%;
+    overflow-x: hidden;
+   }
+
 }
